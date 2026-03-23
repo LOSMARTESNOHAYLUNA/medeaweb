@@ -182,3 +182,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // Llamada inicial
   updateParallax();
 })();
+
+/* ── FAQ ACCORDION ───────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.classList.contains('open');
+
+      // Cierra todos
+      document.querySelectorAll('.faq-question.open').forEach(b => {
+        b.classList.remove('open');
+        b.nextElementSibling.classList.remove('open');
+      });
+
+      // Abre este si estaba cerrado
+      if (!isOpen) {
+        btn.classList.add('open');
+        answer.classList.add('open');
+      }
+    });
+  });
+});
