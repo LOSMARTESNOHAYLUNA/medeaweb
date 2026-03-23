@@ -223,20 +223,124 @@ section { padding:clamp(4.5rem,9vw,8rem) clamp(1.5rem,5vw,4rem); }
 
 /* CARDS GRID */
 .cards-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1.5rem; }
+/* ── CARD CON IMAGEN DE FONDO ──────────────────────── */
 .card {
-  background:var(--card); border:1px solid var(--border-n); border-radius:calc(var(--r)*2);
-  padding:2.2rem 1.8rem; position:relative; overflow:hidden;
-  transition:border-color .3s, box-shadow .3s, transform .3s;
-  display:flex; flex-direction:column; box-shadow:var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  border-radius: calc(var(--r)*2);
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: var(--shadow-md);
+  transition: transform .4s var(--ease), box-shadow .4s;
+  background: var(--ink); /* fallback sin foto */
 }
-.card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--brand); transform:scaleX(0); transform-origin:left; transition:transform .4s var(--ease); }
-.card:hover { border-color:var(--border2); box-shadow:var(--shadow-md); transform:translateY(-2px); }
-.card:hover::after { transform:scaleX(1); }
-.card-num { font-family:var(--ff-d); font-size:2.2rem; font-weight:300; color:var(--brand); opacity:.14; line-height:1; margin-bottom:1.1rem; }
-.card-title { font-family:var(--ff-d); font-size:1.55rem; color:var(--ink); margin-bottom:.45rem; }
-.card-desc { font-size:.95rem; color:var(--muted); line-height:1.7; flex:1; margin-bottom:1.2rem; }
-.card-link { font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; color:var(--brand); opacity:.55; transition:opacity .2s; }
-.card:hover .card-link { opacity:1; }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Imagen de fondo */
+.card-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+  transition: transform .6s var(--ease), filter .6s;
+  filter: saturate(.85);
+}
+.card:hover .card-bg-img {
+  transform: scale(1.04);
+  filter: saturate(1);
+}
+
+/* Overlay degradado de abajo */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(28,22,20,.05) 0%,
+    rgba(28,22,20,.25) 40%,
+    rgba(28,22,20,.75) 75%,
+    rgba(28,22,20,.88) 100%
+  );
+  transition: background .4s;
+}
+.card:hover .card-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(28,22,20,.05) 0%,
+    rgba(28,22,20,.2) 35%,
+    rgba(28,22,20,.72) 70%,
+    rgba(28,22,20,.88) 100%
+  );
+}
+
+/* Contenido de texto */
+.card-body {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 1.8rem 1.8rem;
+}
+.card-num {
+  font-family: var(--ff-d);
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(245,240,232,.45);
+  letter-spacing: .18em;
+  line-height: 1;
+  margin-bottom: .7rem;
+}
+.card-title {
+  font-family: var(--ff-d);
+  font-size: 1.65rem;
+  color: #fff;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+}
+.card-desc {
+  font-size: .9rem;
+  color: rgba(245,240,232,.72);
+  line-height: 1.65;
+  margin-bottom: 1.2rem;
+}
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold-lt);
+  opacity: .75;
+  transition: opacity .2s, gap .2s;
+}
+.card:hover .card-link {
+  opacity: 1;
+  gap: .7rem;
+}
+
+/* Sin imagen (fallback) */
+.card-no-img {
+  background: var(--card);
+  border: 1px solid var(--border-n);
+  min-height: auto;
+}
+.card-no-img .card-body { padding: 2.2rem 1.8rem; }
+.card-no-img .card-num { color: var(--brand); opacity: .14; font-size: 2.2rem; }
+.card-no-img .card-title { color: var(--ink); }
+.card-no-img .card-desc { color: var(--muted); }
+.card-no-img .card-link { color: var(--brand); }
+.card-no-img::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--brand); transform:scaleX(0); transform-origin:left; transition:transform .4s var(--ease); }
+.card-no-img:hover::after { transform:scaleX(1); }
+
+@media(max-width:600px) {
+  .card { min-height: 300px; }
+}
 
 /* SERVICE DETAIL */
 .service-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; }
