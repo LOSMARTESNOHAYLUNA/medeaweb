@@ -20,7 +20,10 @@ function openMobileMenu() {
   if (!menu) return;
   menu.classList.add('open');
   document.body.style.overflow = 'hidden';
-  if (btn) btn.setAttribute('aria-expanded', 'true');
+  if (btn) {
+    btn.setAttribute('aria-expanded', 'true');
+    btn.classList.add('open');
+  }
 }
 function closeMobileMenu() {
   const menu = document.getElementById('mobileMenu');
@@ -28,9 +31,32 @@ function closeMobileMenu() {
   if (!menu) return;
   menu.classList.remove('open');
   document.body.style.overflow = '';
-  if (btn) btn.setAttribute('aria-expanded', 'false');
+  if (btn) {
+    btn.setAttribute('aria-expanded', 'false');
+    btn.classList.remove('open');
+  }
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMobileMenu(); });
+
+// Mobile submenu accordions — toggle mm-sub on parent link tap
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.mobile-menu > a[data-toggle]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const sub = document.getElementById(link.dataset.toggle);
+      if (!sub) return;
+      const isOpen = sub.style.display === 'flex';
+      // Close all subs first
+      document.querySelectorAll('.mm-sub').forEach(s => s.style.display = 'none');
+      document.querySelectorAll('.mobile-menu > a[data-toggle]').forEach(l => l.classList.remove('mm-open'));
+      // Toggle this one
+      if (!isOpen) {
+        sub.style.display = 'flex';
+        link.classList.add('mm-open');
+      }
+    });
+  });
+});
 
 /* ── REVEAL ON SCROLL ───────────────────────────────── */
 const revealObs = new IntersectionObserver(entries => {

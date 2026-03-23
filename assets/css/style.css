@@ -90,19 +90,48 @@ ul { list-style: none; }
 .nav-item:hover .nav-arrow { transform:rotate(180deg); }
 
 .nav-dropdown {
-  display:none; position:absolute; top:calc(100% + .6rem); left:50%;
-  transform:translateX(-50%);
-  background:var(--card); border:1px solid var(--border-n);
-  border-radius:var(--r); min-width:220px; padding:.4rem 0;
-  box-shadow:var(--shadow-lg);
+  /* Oculto con opacity+pointer-events en vez de display:none
+     → no hay salto visual y el hover no se interrumpe */
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;          /* pegado justo debajo — sin gap */
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: var(--card);
+  border: 1px solid var(--border-n);
+  border-radius: var(--r);
+  min-width: 220px;
+  padding: .5rem 0;
+  box-shadow: var(--shadow-lg);
+  transition: opacity .18s var(--ease), transform .18s var(--ease);
+  z-index: 300;
 }
-.nav-item:hover .nav-dropdown { display:block; }
+
+/* Puente invisible que cubre el hueco entre el link y el dropdown
+   para que el ratón no "pierda" el hover al pasar de uno a otro */
+.nav-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -12px; left: 0; right: 0;
+  height: 12px;
+}
+
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
 .nav-dropdown a {
-  display:block; font-size:.82rem; font-weight:300; letter-spacing:.08em;
-  color:var(--ink2); padding:.58rem 1.2rem;
-  transition:color .15s, background .15s;
+  display: block;
+  font-size: .82rem; font-weight: 300; letter-spacing: .08em;
+  color: var(--ink2);
+  padding: .65rem 1.2rem;
+  transition: color .15s, background .15s;
+  white-space: nowrap;
 }
-.nav-dropdown a:hover { color:var(--brand); background:var(--brand-bg); }
+.nav-dropdown a:hover { color: var(--brand); background: var(--brand-bg); }
 
 .nav-cta {
   font-size:.76rem; font-weight:400; letter-spacing:.15em; text-transform:uppercase;
@@ -338,64 +367,97 @@ footer { background:var(--ink); padding:4rem clamp(1.5rem,5vw,4rem) 2rem; }
 .mobile-menu {
   display: none;
   position: fixed; inset: 0; z-index: 300;
-  background: rgba(250,248,245,.98);
+  background: var(--bg);
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 2rem 2.5rem 2rem;
+  padding: 5rem 2.5rem 2.5rem;
   overflow-y: auto;
-  backdrop-filter: blur(8px);
 }
 .mobile-menu.open { display: flex; }
 
 .mm-close {
   position: absolute; top: 1.4rem; right: 1.6rem;
-  font-size: 2rem; line-height: 1;
+  font-size: 2.2rem; line-height: 1;
   background: none; border: none;
   color: var(--ink); cursor: pointer;
   padding: .3rem .6rem;
   transition: color .2s;
+  z-index: 2;
 }
 .mm-close:hover { color: var(--brand); }
 
-.mobile-menu a {
+/* Todos los links directos del menú móvil */
+.mobile-menu > a {
   font-family: var(--ff-d);
-  font-size: 2rem; font-weight: 300;
+  font-size: 1.9rem; font-weight: 300;
   color: var(--ink);
-  padding: .45rem 0;
+  padding: .55rem 0;
   border-bottom: 1px solid var(--border-n);
   width: 100%;
   transition: color .2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
 }
-.mobile-menu a:hover { color: var(--brand); }
+.mobile-menu > a:hover { color: var(--brand); }
+
+/* Indicador ▸/▾ para links con submenú */
+.mobile-menu > a[data-toggle]::after {
+  content: '▸';
+  font-size: .8rem;
+  opacity: .3;
+  transition: transform .2s, opacity .2s;
+  font-family: var(--ff-b);
+  flex-shrink: 0;
+}
+.mobile-menu > a[data-toggle].mm-open { color: var(--brand); }
+.mobile-menu > a[data-toggle].mm-open::after {
+  transform: rotate(90deg);
+  opacity: .7;
+}
+
+/* Submenús — ocultos por defecto, JS los muestra */
 .mm-sub {
-  display: flex; flex-direction: column;
-  padding: .1rem 0 .6rem 1.2rem;
+  display: none;
+  flex-direction: column;
+  padding: .4rem 0 .6rem 1.2rem;
   width: 100%;
+  border-bottom: 1px solid var(--border-n);
 }
 .mm-sub a {
   font-family: var(--ff-b);
   font-size: 1rem; font-weight: 300;
-  letter-spacing: .06em;
+  letter-spacing: .05em;
   color: var(--muted);
-  border-bottom: none;
-  padding: .25rem 0;
+  padding: .38rem 0;
+  border: none !important;
+  transition: color .15s;
+  display: block;
+  width: 100%;
+  text-decoration: none;
 }
+.mm-sub a:hover { color: var(--brand); }
+
+/* CTA del menú móvil */
 .mm-cta {
   font-family: var(--ff-b) !important;
-  font-size: .85rem !important;
+  font-size: .8rem !important;
   font-weight: 400 !important;
-  letter-spacing: .18em;
+  letter-spacing: .16em;
   text-transform: uppercase;
   color: #fff !important;
   background: var(--brand);
-  padding: .9rem 1.8rem !important;
+  padding: .85rem 1.8rem !important;
   border-radius: var(--r);
   border: none !important;
-  margin-top: 1.2rem;
+  margin-top: 1.5rem;
   width: auto !important;
   align-self: flex-start;
+  justify-content: flex-start !important;
 }
+.mm-cta::after { display: none !important; }
 
 /* ══════════════════════════════════════════
    FOOTER SOCIAL
