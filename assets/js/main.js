@@ -149,3 +149,36 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('cookie-reopen')?.classList.add('show');
   }
 });
+
+/* ── PARALLAX HERO ─────────────────────────────────────
+   Mueve la imagen de fondo a la mitad de la velocidad
+   del scroll para crear efecto de profundidad.
+──────────────────────────────────────────────────────── */
+(function initParallax() {
+  const hero = document.querySelector('.hero-bg-photo');
+  const img  = hero ? hero.querySelector('.hero-parallax-img') : null;
+  if (!hero || !img) return;
+
+  let ticking = false;
+
+  function updateParallax() {
+    const rect   = hero.getBoundingClientRect();
+    const viewH  = window.innerHeight;
+    // Progreso: 0 cuando hero sale por abajo, 1 cuando sale por arriba
+    const progress = 1 - (rect.bottom / (viewH + rect.height));
+    // Rango de movimiento: ±8% del alto del hero
+    const shift = (progress - 0.5) * 16;
+    img.style.transform = `translateY(${shift}%)`;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Llamada inicial
+  updateParallax();
+})();
