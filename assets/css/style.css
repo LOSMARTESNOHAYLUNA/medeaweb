@@ -337,7 +337,22 @@ section { padding:clamp(4.5rem,9vw,8rem) clamp(1.5rem,5vw,4rem); }
   gap: .7rem;
 }
 
-/* Sin imagen (fallback) */
+/* Card sin imagen de fondo — fallback al estilo antiguo */
+.card:not(:has(.card-bg-img)) {
+  background: var(--card);
+  border: 1px solid var(--border-n);
+  min-height: auto;
+  box-shadow: var(--shadow-sm);
+}
+.card:not(:has(.card-bg-img)) .card-num { color: var(--brand); opacity: .14; font-size: 2.2rem; font-family: var(--ff-d); }
+.card:not(:has(.card-bg-img)) .card-title { color: var(--ink); font-size: 1.55rem; }
+.card:not(:has(.card-bg-img)) .card-desc { color: var(--muted); }
+.card:not(:has(.card-bg-img)) .card-link { color: var(--brand); opacity: .6; }
+.card:not(:has(.card-bg-img)):hover .card-link { opacity: 1; }
+.card:not(:has(.card-bg-img))::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--brand); transform:scaleX(0); transform-origin:left; transition:transform .4s var(--ease); }
+.card:not(:has(.card-bg-img)):hover::after { transform:scaleX(1); }
+
+/* Sin imagen (fallback clase explícita) */
 .card-no-img {
   background: var(--card);
   border: 1px solid var(--border-n);
