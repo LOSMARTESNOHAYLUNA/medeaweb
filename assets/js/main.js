@@ -3,7 +3,7 @@
    Para activar formularios: web3forms.com → reemplaza WEB3FORMS_KEY
 ═══════════════════════════════════════════════════════ */
 
-const WEB3FORMS_KEY = 'TU_CLAVE_AQUI';
+const WEB3FORMS_KEY = '781b0b15-f3d3-418e-adbf-523ecf3b20a9';
 
 /* ── NAV SCROLL ─────────────────────────────────────── */
 const nav = document.getElementById('nav');
