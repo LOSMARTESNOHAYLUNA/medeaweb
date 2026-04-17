@@ -107,7 +107,7 @@ document.querySelectorAll('.cita-form').forEach(form => {
       await new Promise(r => setTimeout(r, 600));
       sent = true;
     }
-    if (sent && successEl) { form.style.display = 'none'; successEl.classList.add('show'); }
+    if (sent) { window.location.href = '/gracias/'; }
     else { btn.disabled = false; btn.textContent = 'Solicitar cita'; alert('Ha habido un problema. Llámanos al 985 337 963.'); }
   });
 });
