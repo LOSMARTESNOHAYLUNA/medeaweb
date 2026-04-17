@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Solicitud recibida — Medea Estilistas</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+<style>
+.gracias-page{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 2rem;background:var(--bg)}
+.gracias-icon{width:72px;height:72px;border:1.5px solid var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 2rem;color:var(--brand);animation:pop .5s var(--ease) both}
+@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+.gracias-eyebrow{font-family:var(--ff-b);font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--brand);margin-bottom:1rem}
+.gracias-title{font-family:var(--ff-d);font-size:clamp(2.2rem,5vw,3.5rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.2rem}
+.gracias-title em{font-style:italic;color:var(--gold)}
+.gracias-body{font-size:1.05rem;color:var(--ink2);max-width:480px;line-height:1.75;margin:0 auto 2.5rem}
+.gracias-divider{width:40px;height:1px;background:var(--gold);margin:1.5rem auto}
+.gracias-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.gracias-contact{font-size:.85rem;color:var(--muted);margin-top:2rem}
+.gracias-contact a{color:var(--brand);text-decoration:none}
+.countdown{font-size:.78rem;color:var(--muted);letter-spacing:.1em;margin-top:1rem}
+</style>
+</head>
+<body>
+<nav class="nav" style="position:relative;box-shadow:none;border-bottom:1px solid var(--border-n)">
+  <a class="nav-logo" href="/">
+    <img src="/assets/img/logo.png" alt="Logo Medea Estilistas" class="nav-logo-img" width="40" height="40" />
+    <span class="nav-logo-text">Medea <em>Estilistas</em></span>
+  </a>
+</nav>
+
+<main class="gracias-page">
+  <div class="gracias-icon">✓</div>
+  <p class="gracias-eyebrow">Solicitud enviada</p>
+  <h1 class="gracias-title">¡Gracias por<br>contactar con <em>nosotras</em>!</h1>
+  <div class="gracias-divider"></div>
+  <p class="gracias-body">
+    Hemos recibido tu solicitud de cita. Rosa o Montse se pondrán en contacto contigo en breve para confirmar día y hora.
+  </p>
+  <div class="gracias-actions">
+    <a class="btn btn-gold" href="/">Volver al inicio</a>
+    <a class="btn btn-outline" href="tel:985337963">985 337 963</a>
+  </div>
+  <p class="gracias-contact">
+    También puedes escribirnos a <a href="mailto:medea@medeaestilistas.es">medea@medeaestilistas.es</a>
+  </p>
+  <p class="countdown" id="countdown"></p>
+</main>
+
+<script src="/assets/js/main.js" defer></script>
+<script>
+  let secs = 8;
+  const el = document.getElementById('countdown');
+  const tick = () => {
+    el.textContent = 'Serás redirigido al inicio en ' + secs + ' segundo' + (secs !== 1 ? 's' : '') + '…';
+    if (secs-- <= 0) window.location.href = '/';
+  };
+  tick();
+  setInterval(tick, 1000);
+</script>
+</body>
+</html>
