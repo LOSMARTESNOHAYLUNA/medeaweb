@@ -3,7 +3,7 @@
    Para activar formularios: web3forms.com → reemplaza WEB3FORMS_KEY
 ═══════════════════════════════════════════════════════ */
 
-const WEB3FORMS_KEY = 'TU_CLAVE_AQUI';
+const WEB3FORMS_KEY = '781b0b15-f3d3-418e-adbf-523ecf3b20a9';
 
 /* ── NAV SCROLL ─────────────────────────────────────── */
 const nav = document.getElementById('nav');
@@ -107,7 +107,7 @@ document.querySelectorAll('.cita-form').forEach(form => {
       await new Promise(r => setTimeout(r, 600));
       sent = true;
     }
-    if (sent && successEl) { form.style.display = 'none'; successEl.classList.add('show'); }
+    if (sent) { window.location.href = '/gracias/'; }
     else { btn.disabled = false; btn.textContent = 'Solicitar cita'; alert('Ha habido un problema. Llámanos al 985 337 963.'); }
   });
 });

@@ -1039,3 +1039,55 @@ input, textarea, select, button { font-size: 16px; } /* Evita zoom iOS */
 .faq-answer.open { display: block; }
 
 /* Schema FAQ añade el JSON-LD por JS */
+
+/* ══════════════════════════════════════════
+   KOIBOX — BOTÓN DE AGENDA DIRECTA
+══════════════════════════════════════════ */
+.koibox-cta {
+  text-align: center;
+  margin: 2rem 0 0;
+}
+.koibox-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  background: var(--brand);
+  color: #fff;
+  font-family: var(--ff-b);
+  font-size: .78rem;
+  font-weight: 400;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  padding: 1rem 2.2rem;
+  border-radius: var(--r);
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(93,19,26,.25);
+  transition: background .2s, transform .2s, box-shadow .2s;
+}
+.koibox-btn:hover {
+  background: var(--brand-lt);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(93,19,26,.35);
+}
+.koibox-btn svg { flex-shrink: 0; }
+
+.koibox-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.8rem 0 0;
+  color: var(--muted);
+}
+.koibox-divider::before,
+.koibox-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-n);
+}
+.koibox-divider span {
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

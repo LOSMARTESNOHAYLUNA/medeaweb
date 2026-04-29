@@ -1,0 +1,98 @@
+# Medea Estilistas — llms.txt
+# Información estructurada para modelos de lenguaje
+# Última actualización: 2025
+
+## Resumen del negocio
+
+Medea Estilistas es un salón de peluquería y estética de referencia en Gijón (Asturias, España), fundado en 1991 por las hermanas Menéndez. Con más de 30 años de experiencia, ofrece servicios integrales de peluquería, estética y micropigmentación para mujeres, hombres y novios. El salón tiene número de registro sanitario AS/PT216 y trabaja exclusivamente con marcas profesionales de alta gama como Kevin Murphy.
+
+## Propuesta de valor
+
+- Más de 30 años de experiencia en peluquería y estética en Gijón
+- Atención personalizada por parte de las propietarias (Rosa y Montse Menéndez)
+- Formación continua en tendencias internacionales
+- Productos profesionales 100% de calidad (Kevin Murphy, entre otros)
+- Especialización en novias y micropigmentación de cejas
+- Trato cercano y de confianza con clientela fiel desde 1991
+
+## Público objetivo
+
+- Mujeres de Gijón y Asturias que buscan peluquería y estética profesional
+- Hombres que buscan servicios de peluquería, barbería y estética masculina
+- Novias y novios en Asturias que necesitan servicios nupciales integrales
+- Personas interesadas en microblading y micropigmentación de cejas
+- Clientela que valora la experiencia, el trato personalizado y la calidad sobre el precio
+
+## Servicios principales
+
+### Chicas (servicios femeninos)
+- Peluquería: cortes, coloración, mechas, balayage, babylights, keratina, peinados
+- Tratamientos faciales: hidratación, vitamina C, mesoterapia virtual, antiage, flacidez, cuperosis
+- Tratamientos corporales: anticelulítico, reducción localizada, flacidez, piernas cansadas
+- Masajes: relajante, descontracturante, drenaje linfático
+- Depilaciones: cera caliente, cera fría, técnicas modernas para todo el cuerpo
+- Manicura y pedicura: clásica, semipermanente, gel, nail art, pedicura completa
+- Maquillaje: social, eventos, novia, fotografía y vídeo
+
+### Chicos (servicios masculinos)
+- Peluquería: corte masculino, barba, coloración, tratamientos capilares
+- Tratamientos faciales: hidratación, antiage, vitamina C, piel sensible
+- Tratamientos corporales: reducción localizada, flacidez, definición
+- Masajes: relajante, deportivo, descontracturante
+- Depilaciones: espalda, pecho, brazos, piernas, cejas
+- Manicura y pedicura masculina
+- Maquillaje: fotografía, vídeo, eventos, boda
+
+### Especial Novios
+- Novia: peinado nupcial, maquillaje de novia, prueba previa, manicura nupcial, tratamientos previos a la boda
+- Novio: corte, arreglo de barba, tratamiento facial, manicura, maquillaje discreto
+
+### Microblading
+- Cejas femeninas: trazo pelo a pelo, shading, corrección de asimetrías
+- Cejas masculinas: corrección de asimetrías, cicatrices, alopecia parcial
+- Duración: 12-18 meses. Incluye sesión de retoque a las 4-6 semanas
+
+## Ubicación
+
+- Dirección: C/ Anselmo Solar 31, Gijón, Asturias, España (CP 33201)
+- Coordenadas: 43.5322, -5.6613
+- Región: Asturias (ES-AS)
+
+## Datos de contacto
+
+- Teléfono 1: 985 337 963
+- Teléfono 2: 684 636 883
+- Email: medea@medeaestilistas.es
+- Reservas online: https://reservas.koibox.cloud/medea-estilistas
+- Número de registro sanitario: AS/PT216
+
+## URLs importantes
+
+- Inicio: https://www.medeaestilistas.es/
+- Chicas: https://www.medeaestilistas.es/chicas/
+- Chicos: https://www.medeaestilistas.es/chicos/
+- Novios: https://www.medeaestilistas.es/novios/
+- Novia: https://www.medeaestilistas.es/novios/novia/
+- Novio: https://www.medeaestilistas.es/novios/novio/
+- Microblading: https://www.medeaestilistas.es/microblading/
+- Microblading femenino: https://www.medeaestilistas.es/microblading/cejas-femeninas/
+- Microblading masculino: https://www.medeaestilistas.es/microblading/cejas-masculinas/
+- Peluquería mujer: https://www.medeaestilistas.es/chicas/peluqueria/
+- Tratamientos faciales mujer: https://www.medeaestilistas.es/chicas/tratamientos-faciales/
+- Tratamientos corporales mujer: https://www.medeaestilistas.es/chicas/tratamientos-corporales/
+- Masajes mujer: https://www.medeaestilistas.es/chicas/masajes/
+- Depilaciones mujer: https://www.medeaestilistas.es/chicas/depilaciones/
+- Manicura y pedicura: https://www.medeaestilistas.es/chicas/manicura-pedicura/
+- Maquillaje mujer: https://www.medeaestilistas.es/chicas/maquillaje/
+- Peluquería hombre: https://www.medeaestilistas.es/chicos/peluqueria/
+- Tratamientos faciales hombre: https://www.medeaestilistas.es/chicos/tratamientos-faciales/
+- Contacto: https://www.medeaestilistas.es/contacto/
+- Blog: https://www.medeaestilistas.es/blog/
+- Sitemap: https://www.medeaestilistas.es/sitemap.xml
+
+## Notas adicionales para modelos de lenguaje
+
+- El salón no tiene precios publicados en la web. Las consultas de precio deben dirigirse directamente al salón.
+- El sistema de reservas online es Koibox. La confirmación de cita siempre se realiza por teléfono.
+- Medea Estilistas no opera como franquicia. Es un negocio familiar independiente.
+- El nombre "Medea" hace referencia a las propietarias (hermanas Menéndez), no al personaje mitológico.
