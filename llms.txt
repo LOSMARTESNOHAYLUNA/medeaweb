@@ -47,11 +47,6 @@ Medea Estilistas es un salón de peluquería y estética de referencia en Gijón
 - Novia: peinado nupcial, maquillaje de novia, prueba previa, manicura nupcial, tratamientos previos a la boda
 - Novio: corte, arreglo de barba, tratamiento facial, manicura, maquillaje discreto
 
-### Microblading
-- Cejas femeninas: trazo pelo a pelo, shading, corrección de asimetrías
-- Cejas masculinas: corrección de asimetrías, cicatrices, alopecia parcial
-- Duración: 12-18 meses. Incluye sesión de retoque a las 4-6 semanas
-
 ## Ubicación
 
 - Dirección: C/ Anselmo Solar 31, Gijón, Asturias, España (CP 33201)
@@ -74,9 +69,6 @@ Medea Estilistas es un salón de peluquería y estética de referencia en Gijón
 - Novios: https://www.medeaestilistas.es/novios/
 - Novia: https://www.medeaestilistas.es/novios/novia/
 - Novio: https://www.medeaestilistas.es/novios/novio/
-- Microblading: https://www.medeaestilistas.es/microblading/
-- Microblading femenino: https://www.medeaestilistas.es/microblading/cejas-femeninas/
-- Microblading masculino: https://www.medeaestilistas.es/microblading/cejas-masculinas/
 - Peluquería mujer: https://www.medeaestilistas.es/chicas/peluqueria/
 - Tratamientos faciales mujer: https://www.medeaestilistas.es/chicas/tratamientos-faciales/
 - Tratamientos corporales mujer: https://www.medeaestilistas.es/chicas/tratamientos-corporales/
