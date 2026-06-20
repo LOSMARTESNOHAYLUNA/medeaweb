@@ -97,6 +97,56 @@
     {"@type":"ListItem","position":2,"name":"Blog"}
   ]
 }</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Medea Estilistas",
+  "url": "https://www.medeaestilistas.es",
+  "logo": "https://www.medeaestilistas.es/assets/img/logo.png",
+  "image": "https://www.medeaestilistas.es/assets/img/logo.png",
+  "description": "Salón de peluquería y estética en Gijón desde 1991. Más de 30 años de experiencia en peluquería, tratamientos faciales, corporales, masajes, depilaciones, manicura, pedicura y maquillaje para mujer y hombre.",
+  "foundingDate": "1991",
+  "telephone": ["+34985337963", "+34684636883"],
+  "email": "medea@medeaestilistas.es",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Anselmo Solar, 31",
+    "addressLocality": "Gijón",
+    "addressRegion": "Asturias",
+    "postalCode": "33204",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.529091,
+    "longitude": -5.6439555
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "13:30"
+    }
+  ],
+  "hasMap": "https://maps.app.goo.gl/it7pQGJSdR7a5feT6",
+  "sameAs": [
+    "https://www.instagram.com/medeaestilistas",
+    "https://www.facebook.com/medeaestilistas",
+    "https://maps.app.goo.gl/it7pQGJSdR7a5feT6"
+  ],
+  "priceRange": "€€",
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": "Cash, Credit Card"
+}
+</script>
 </head>
 <body>
 <nav id="nav">
@@ -196,51 +246,46 @@
     <h2 class="section-title reveal">Actualidad y <em class="italic text-gold">tendencias</em></h2>
     <div class="gold-bar reveal"></div>
     <div class="blog-grid" style="margin-top:3rem">
-      <a class="blog-card reveal" href="/blog/peluqueria-masculina-gijon/" style="text-decoration:none;display:block">
+      <article class="blog-card reveal" onclick="location.href='/blog/peluqueria-masculina-gijon/'" style="cursor:pointer">
         <img class="blog-card-img" src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Peluquería masculina en Gijón — Medea Estilistas" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-tag">Peluquería masculina</div>
-          <h2 class="blog-card-title" style="color:var(--ink)">Los chicos en Medea: cuidado masculino sin complejos</h2>
+          <h2 class="blog-card-title"><a href="/blog/peluqueria-masculina-gijon/" style="color:inherit;text-decoration:none">Los chicos en Medea: cuidado masculino sin complejos</a></h2>
           <p class="blog-card-excerpt">El hombre moderno se preocupa por su imagen. En Medea Estilistas ofrecemos todos los servicios que necesitas para estar siempre impecable.</p>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
         </div>
-      </a>
-      <a class="blog-card reveal" href="/blog/kevin-murphy-cosmetica-capilar/" style="text-decoration:none;display:block">
+      </article>
+      <article class="blog-card reveal" onclick="location.href='/blog/kevin-murphy-cosmetica-capilar/'" style="cursor:pointer">
         <img class="blog-card-img" src="/assets/img/mujer-horizontal-medea-gijon.webp" alt="Kevin Murphy cosmética capilar natural — Medea Estilistas Gijón" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-tag">Tratamientos capilares</div>
-          <h2 class="blog-card-title" style="color:var(--ink)">Kevin Murphy: cosmética capilar natural para tu cabello</h2>
+          <h2 class="blog-card-title"><a href="/blog/kevin-murphy-cosmetica-capilar/" style="color:inherit;text-decoration:none">Kevin Murphy: cosmética capilar natural para tu cabello</a></h2>
           <p class="blog-card-excerpt">Te explicamos por qué hemos elegido Kevin Murphy como uno de nuestros productos estrella y cómo puede transformar el estado de tu cabello.</p>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
         </div>
-      </a>
-      <a class="blog-card reveal" href="/blog/guia-novias-tratamientos-antes-boda/" style="text-decoration:none;display:block">
+      </article>
+      <article class="blog-card reveal" onclick="location.href='/blog/guia-novias-tratamientos-antes-boda/'" style="cursor:pointer">
         <img class="blog-card-img" src="/assets/img/novia-horizontal-medea-gijon.webp" alt="Guía peluquería y maquillaje de novia en Gijón" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-tag">Novias</div>
-          <h2 class="blog-card-title" style="color:var(--ink)">Guía completa para novias: cuándo empezar los tratamientos</h2>
+          <h2 class="blog-card-title"><a href="/blog/guia-novias-tratamientos-antes-boda/" style="color:inherit;text-decoration:none">Guía completa para novias: cuándo empezar los tratamientos</a></h2>
           <p class="blog-card-excerpt">Planificar los tratamientos con tiempo es clave para llegar al día de la boda con la piel y el cabello en su mejor momento.</p>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
         </div>
-      </a>
-      <a class="blog-card reveal" href="/blog/tendencias-coloracion-temporada/" style="text-decoration:none;display:block">
+      </article>
+      <article class="blog-card reveal" onclick="location.href='/blog/tendencias-coloracion-temporada/'" style="cursor:pointer">
         <img class="blog-card-img" src="/assets/img/peluqueria-mujer-horizontal-medea-gijon.webp" alt="Tendencias coloración cabello Gijón — Medea Estilistas" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-tag">Tendencias</div>
-          <h2 class="blog-card-title" style="color:var(--ink)">Tendencias de coloración para esta temporada</h2>
+          <h2 class="blog-card-title"><a href="/blog/tendencias-coloracion-temporada/" style="color:inherit;text-decoration:none">Tendencias de coloración para esta temporada</a></h2>
           <p class="blog-card-excerpt">Balayage, babylights y coloración vegetal: las técnicas y tonos que más van a lucir esta temporada en Gijón.</p>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
         </div>
-      </a>
-      <a class="blog-card reveal" href="/blog/mesoterapia-virtual-hidratacion-profunda/" style="text-decoration:none;display:block">
+      </article>
+      <article class="blog-card reveal" onclick="location.href='/blog/mesoterapia-virtual-hidratacion-profunda/'" style="cursor:pointer">
         <img class="blog-card-img" src="/assets/img/mujer-facial-horizontal-medea-gijon.webp" alt="Mesoterapia virtual Gijón — Medea Estilistas" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-tag">Estética</div>
-          <h2 class="blog-card-title" style="color:var(--ink)">Mesoterapia virtual: hidratación profunda sin agujas</h2>
+          <h2 class="blog-card-title"><a href="/blog/mesoterapia-virtual-hidratacion-profunda/" style="color:inherit;text-decoration:none">Mesoterapia virtual: hidratación profunda sin agujas</a></h2>
           <p class="blog-card-excerpt">Conoce esta técnica no invasiva que consigue los resultados de la mesoterapia clásica sin ningún tipo de punción.</p>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
         </div>
-      </a>
+      </article>
     </div>
     <div style="text-align:center;margin-top:4rem">
       <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem">Próximamente más artículos. Síguenos en redes sociales para estar al día.</p>

@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
+
+Disallow: /gracias/
+Disallow: /en-construccion.html
 
 Sitemap: https://www.medeaestilistas.es/sitemap.xml
