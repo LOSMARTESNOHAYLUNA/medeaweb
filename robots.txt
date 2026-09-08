@@ -1,5 +1,18 @@
 User-agent: *
 Allow: /
+Disallow: /gracias/
 Disallow: /assets/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
 
 Sitemap: https://www.medeaestilistas.es/sitemap.xml
