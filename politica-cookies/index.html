@@ -17,11 +17,16 @@
 <meta name="robots" content="noindex, follow" />
 <link rel="canonical" href="https://www.medeaestilistas.es/politica-cookies/" />
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/style.css" />
-<script type="application/ld+json">{
+  <!-- Preconnect crítico -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- CSS crítico con preload -->
+  <link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="/assets/css/style.css" /></noscript>
+  <!-- Fuentes optimizadas: solo pesos usados, sin duplicados -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" /></noscript>
+  <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BeautySalon",
   "name": "Medea Estilistas",

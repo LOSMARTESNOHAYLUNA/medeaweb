@@ -23,11 +23,16 @@
 <meta name="geo.placename" content="Gijón, Asturias"/>
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png"/>
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/assets/css/style.css"/>
-<script type="application/ld+json">{
+  <!-- Preconnect crítico -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- CSS crítico con preload -->
+  <link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="/assets/css/style.css" /></noscript>
+  <!-- Fuentes optimizadas: solo pesos usados, sin duplicados -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" /></noscript>
+  <script type="application/ld+json">{
   "@context":"https://schema.org",
   "@type":["BeautySalon","HairSalon","LocalBusiness"],
   "@id":"https://www.medeaestilistas.es/#local-business",
@@ -170,170 +175,80 @@
 </script>
 </head>
 <body>
-<nav id="nav" aria-label="Navegación principal">
-  <div class="nav-logo-row">
-    <a class="nav-logo" href="/" aria-label="Medea Estilistas — Inicio">
-      <img src="/assets/img/logo.svg" alt="Logo Medea Estilistas" class="nav-logo-img" width="56" height="56" loading="eager" fetchpriority="high"/>
-      <span class="nav-logo-text">Medea <span class="nav-logo-accent">Estilistas</span></span>
-    </a>
-    <button class="nav-hamburger" onclick="openMobileMenu()" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="nav-menu-row">
-    <ul class="nav-menu" role="menubar">
-      <li class="nav-item"><a class="nav-link" href="/sobre-nosotras/">Nosotras</a></li>
-      <li class="nav-item">
-        <a class="nav-link" href="/peluqueria/" aria-haspopup="true">Peluquería <span class="nav-arrow" aria-hidden="true">▾</span></a>
-        <div class="nav-dropdown" role="menu">
-          <a href="/peluqueria/coloracion-gijon/">Coloración</a>
-          <a href="/peluqueria/mechas-balayage-gijon/">Mechas y balayage</a>
-          <a href="/peluqueria/alisado-keratina-gijon/">Alisado y keratina</a>
-          <a href="/peluqueria/moldeado-bodies-gijon/">Moldeado Bodies</a>
-          <a href="/peluqueria/tratamientos-capilares-gijon/">Tratamientos capilares</a>
-        </div>
-      </li>
-      <li class="nav-item has-mega">
-        <a class="nav-link" href="/tratamientos-faciales/" aria-haspopup="true">Tratamientos faciales <span class="nav-arrow" aria-hidden="true">▾</span></a>
-        <div class="nav-dropdown" role="menu">
-          <div class="nav-mega-col">
-            <a href="/tratamientos-faciales/tratamiento-longevidad-gijon/" class="star">Tratamiento Longevidad</a>
-            <a href="/tratamientos-faciales/vitamina-c-gijon/">Vitamina C</a>
-            <a href="/tratamientos-faciales/limpieza-facial-gijon/">Limpieza facial</a>
-          </div>
-          <div class="nav-mega-col">
-            <a href="/tratamientos-faciales/pieles-grasas-acneicas-gijon/">Pieles grasas y acnéicas</a>
-            <a href="/tratamientos-faciales/regenerador-acidos-gijon/">Regenerador con ácidos</a>
-            <a href="/tratamientos-faciales/tratamiento-manchas-gijon/">Tratamiento de manchas</a>
-          </div>
-          <div class="nav-mega-col">
-            <a href="/tratamientos-faciales/pieles-sensibles-gijon/">Pieles sensibles</a>
-            <a href="/tratamientos-faciales/anti-edad-efecto-botox-gijon/">Anti edad efecto botox</a>
-            <a href="/tratamientos-faciales/higiene-facial-jovenes-gijon/">Higiene facial jóvenes</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item has-mega">
-        <a class="nav-link" href="/tratamientos-corporales/" aria-haspopup="true">Tratamientos corporales <span class="nav-arrow" aria-hidden="true">▾</span></a>
-        <div class="nav-dropdown nav-mega-2col" role="menu">
-          <div class="nav-mega-col">
-            <a href="/tratamientos-corporales/presoterapia-gijon/">Presoterapia</a>
-            <a href="/tratamientos-corporales/mesoterapia-virtual-gijon/">Mesoterapia virtual</a>
-            <a href="/tratamientos-corporales/maderoterapia-gijon/">Maderoterapia</a>
-            <a href="/tratamientos-corporales/tratamiento-anticelulitico-gijon/">Tratamiento anticelulítico</a>
-          </div>
-          <div class="nav-mega-col">
-            <a href="/tratamientos-corporales/tratamiento-reductor-gijon/">Tratamiento reductor</a>
-            <a href="/tratamientos-corporales/reafirmante-senos-gijon/">Reafirmante de senos</a>
-            <a href="/tratamientos-corporales/higiene-espalda-gijon/">Higiene de espalda</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/masajes/" aria-haspopup="true">Masajes <span class="nav-arrow" aria-hidden="true">▾</span></a>
-        <div class="nav-dropdown" role="menu">
-          <a href="/masajes/masaje-relajante-gijon/">Masaje relajante</a>
-          <a href="/masajes/reflexologia-podal-gijon/">Reflexología podal</a>
-          <a href="/masajes/drenaje-linfatico-manual-gijon/">Drenaje linfático manual</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/depilacion/" aria-haspopup="true">Depilación <span class="nav-arrow" aria-hidden="true">▾</span></a>
-        <div class="nav-dropdown" role="menu">
-          <a href="/depilacion/pasta-de-caramelo-gijon/">Pasta de caramelo</a>
-          <a href="/depilacion/depilacion-electrica-gijon/">Depilación eléctrica</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/manicura-pedicura/" aria-haspopup="true">Manicura y pedicura <span class="nav-arrow" aria-hidden="true">▾</span></a>
-        <div class="nav-dropdown" role="menu">
-          <a href="/manicura-pedicura/unas-semipermanentes-gijon/">Uñas semipermanentes</a>
-          <a href="/manicura-pedicura/manicura-pedicura-clasica-gijon/">Manicura y pedicura clásica</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/maquillaje/" aria-haspopup="true">Maquillaje <span class="nav-arrow" aria-hidden="true">▾</span></a>
-        <div class="nav-dropdown" role="menu">
-          <a href="/maquillaje/maquillaje-social-gijon/">Maquillaje social</a>
-          <a href="/maquillaje/maquillaje-novias-gijon/">Maquillaje de novias</a>
-          <a href="/maquillaje/maquillaje-aerografo-gijon/">Maquillaje con aerógrafo</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/novios/" aria-haspopup="true">Novios <span class="nav-arrow" aria-hidden="true">▾</span></a>
-        <div class="nav-dropdown" role="menu">
-          <a href="/novios/novia/">Para ella</a>
-          <a href="/novios/novio/">Para él</a>
-        </div>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
-      <li class="nav-item"><a class="nav-link" href="/contacto/">Contacto</a></li>
-    </ul>
-  </div>
+<nav id="nav">
+  <a class="nav-logo" href="/" aria-label="Medea Estilistas — Inicio">
+    <img src="/assets/img/logo.png" alt="Logo Medea Estilistas" class="nav-logo-img" width="40" height="40" />
+    <span class="nav-logo-text">Medea <span class="nav-logo-accent">Estilistas</span></span>
+  </a>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a class="nav-link" href="/chicas/">Chicas <span class="nav-arrow">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="/chicas/peluqueria/">Peluquería</a>
+        <a href="/chicas/tratamientos-faciales/">Tratamientos faciales</a>
+        <a href="/chicas/tratamientos-corporales/">Tratamientos corporales</a>
+        <a href="/chicas/masajes/">Masajes</a>
+        <a href="/chicas/depilaciones/">Depilaciones</a>
+        <a href="/chicas/manicura-pedicura/">Manicura y Pedicura</a>
+        <a href="/chicas/maquillaje/">Maquillaje</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/chicos/">Chicos <span class="nav-arrow">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="/chicos/peluqueria/">Peluquería</a>
+        <a href="/chicos/tratamientos-faciales/">Tratamientos faciales</a>
+        <a href="/chicos/tratamientos-corporales/">Tratamientos corporales</a>
+        <a href="/chicos/masajes/">Masajes</a>
+        <a href="/chicos/depilaciones/">Depilaciones</a>
+        <a href="/chicos/manicura-pedicura/">Manicura y Pedicura</a>
+        <a href="/chicos/maquillaje/">Maquillaje</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/novios/">Novios <span class="nav-arrow">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="/novios/novia/">La Novia</a>
+        <a href="/novios/novio/">El Novio</a>
+      </div>
+    </li>
+
+    <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+    <li class="nav-item"><a class="nav-link" href="/contacto/">Contacto</a></li>
+  </ul>
+  <a class="nav-cta" href="#reservar">Reservar cita</a>
+  <button class="nav-hamburger" onclick="openMobileMenu()" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menú de navegación">
   <button class="mm-close" onclick="closeMobileMenu()" aria-label="Cerrar menú">×</button>
-  <a href="/sobre-nosotras/">Nosotras</a>
-  <a data-toggle="mm-pel" href="/peluqueria/">Peluquería</a>
-  <div class="mm-sub" id="mm-pel">
-    <a href="/peluqueria/coloracion-gijon/">Coloración</a>
-    <a href="/peluqueria/mechas-balayage-gijon/">Mechas y balayage</a>
-    <a href="/peluqueria/alisado-keratina-gijon/">Alisado y keratina</a>
-    <a href="/peluqueria/moldeado-bodies-gijon/">Moldeado Bodies</a>
-    <a href="/peluqueria/tratamientos-capilares-gijon/">Tratamientos capilares</a>
+  <a href="/" onclick="closeMobileMenu()">Inicio</a>
+  <a href="/chicas/" onclick="closeMobileMenu()">Chicas</a>
+  <div class="mm-sub">
+    <a href="/chicas/peluqueria/" onclick="closeMobileMenu()">— Peluquería</a>
+    <a href="/chicas/tratamientos-faciales/" onclick="closeMobileMenu()">— Tratamientos faciales</a>
+    <a href="/chicas/tratamientos-corporales/" onclick="closeMobileMenu()">— Tratamientos corporales</a>
+    <a href="/chicas/masajes/" onclick="closeMobileMenu()">— Masajes</a>
+    <a href="/chicas/depilaciones/" onclick="closeMobileMenu()">— Depilaciones</a>
+    <a href="/chicas/manicura-pedicura/" onclick="closeMobileMenu()">— Manicura y Pedicura</a>
+    <a href="/chicas/maquillaje/" onclick="closeMobileMenu()">— Maquillaje</a>
   </div>
-  <a data-toggle="mm-fac" href="/tratamientos-faciales/">Tratamientos faciales</a>
-  <div class="mm-sub" id="mm-fac">
-    <a href="/tratamientos-faciales/tratamiento-longevidad-gijon/">★ Tratamiento Longevidad</a>
-    <a href="/tratamientos-faciales/vitamina-c-gijon/">Vitamina C</a>
-    <a href="/tratamientos-faciales/limpieza-facial-gijon/">Limpieza facial</a>
-    <a href="/tratamientos-faciales/pieles-grasas-acneicas-gijon/">Pieles grasas y acnéicas</a>
-    <a href="/tratamientos-faciales/regenerador-acidos-gijon/">Regenerador con ácidos</a>
-    <a href="/tratamientos-faciales/tratamiento-manchas-gijon/">Tratamiento de manchas</a>
-    <a href="/tratamientos-faciales/pieles-sensibles-gijon/">Pieles sensibles</a>
-    <a href="/tratamientos-faciales/anti-edad-efecto-botox-gijon/">Anti edad efecto botox</a>
-    <a href="/tratamientos-faciales/higiene-facial-jovenes-gijon/">Higiene facial jóvenes</a>
+  <a href="/chicos/" onclick="closeMobileMenu()">Chicos</a>
+  <div class="mm-sub">
+    <a href="/chicos/peluqueria/" onclick="closeMobileMenu()">— Peluquería</a>
+    <a href="/chicos/tratamientos-faciales/" onclick="closeMobileMenu()">— Tratamientos faciales</a>
+    <a href="/chicos/tratamientos-corporales/" onclick="closeMobileMenu()">— Tratamientos corporales</a>
+    <a href="/chicos/masajes/" onclick="closeMobileMenu()">— Masajes</a>
+    <a href="/chicos/depilaciones/" onclick="closeMobileMenu()">— Depilaciones</a>
+    <a href="/chicos/manicura-pedicura/" onclick="closeMobileMenu()">— Manicura y Pedicura</a>
+    <a href="/chicos/maquillaje/" onclick="closeMobileMenu()">— Maquillaje</a>
   </div>
-  <a data-toggle="mm-corp" href="/tratamientos-corporales/">Tratamientos corporales</a>
-  <div class="mm-sub" id="mm-corp">
-    <a href="/tratamientos-corporales/presoterapia-gijon/">Presoterapia</a>
-    <a href="/tratamientos-corporales/mesoterapia-virtual-gijon/">Mesoterapia virtual</a>
-    <a href="/tratamientos-corporales/maderoterapia-gijon/">Maderoterapia</a>
-    <a href="/tratamientos-corporales/tratamiento-anticelulitico-gijon/">Tratamiento anticelulítico</a>
-    <a href="/tratamientos-corporales/tratamiento-reductor-gijon/">Tratamiento reductor</a>
-    <a href="/tratamientos-corporales/reafirmante-senos-gijon/">Reafirmante de senos</a>
-    <a href="/tratamientos-corporales/higiene-espalda-gijon/">Higiene de espalda</a>
+  <a href="/novios/" onclick="closeMobileMenu()">Especial Novios</a>
+  <div class="mm-sub">
+    <a href="/novios/novia/" onclick="closeMobileMenu()">— La Novia</a>
+    <a href="/novios/novio/" onclick="closeMobileMenu()">— El Novio</a>
   </div>
-  <a data-toggle="mm-mas" href="/masajes/">Masajes</a>
-  <div class="mm-sub" id="mm-mas">
-    <a href="/masajes/masaje-relajante-gijon/">Masaje relajante</a>
-    <a href="/masajes/reflexologia-podal-gijon/">Reflexología podal</a>
-    <a href="/masajes/drenaje-linfatico-manual-gijon/">Drenaje linfático manual</a>
-  </div>
-  <a data-toggle="mm-dep" href="/depilacion/">Depilación</a>
-  <div class="mm-sub" id="mm-dep">
-    <a href="/depilacion/pasta-de-caramelo-gijon/">Pasta de caramelo</a>
-    <a href="/depilacion/depilacion-electrica-gijon/">Depilación eléctrica</a>
-  </div>
-  <a data-toggle="mm-man" href="/manicura-pedicura/">Manicura y pedicura</a>
-  <div class="mm-sub" id="mm-man">
-    <a href="/manicura-pedicura/unas-semipermanentes-gijon/">Uñas semipermanentes</a>
-    <a href="/manicura-pedicura/manicura-pedicura-clasica-gijon/">Manicura y pedicura clásica</a>
-  </div>
-  <a data-toggle="mm-maq" href="/maquillaje/">Maquillaje</a>
-  <div class="mm-sub" id="mm-maq">
-    <a href="/maquillaje/maquillaje-social-gijon/">Maquillaje social</a>
-    <a href="/maquillaje/maquillaje-novias-gijon/">Maquillaje de novias</a>
-    <a href="/maquillaje/maquillaje-aerografo-gijon/">Maquillaje con aerógrafo</a>
-  </div>
-  <a data-toggle="mm-nov" href="/novios/">Novios</a>
-  <div class="mm-sub" id="mm-nov">
-    <a href="/novios/novia/">Para ella</a>
-    <a href="/novios/novio/">Para él</a>
-  </div>
-  <a href="/blog/">Blog</a>
-  <a href="/contacto/" class="mm-cta">Reservar cita</a>
-</div>
 
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.medeaestilistas.es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.medeaestilistas.es/blog/"},{"@type":"ListItem","position":3,"name":"Peluquería masculina en Gijón"}]}</script>
@@ -360,7 +275,7 @@
     <div class="blog-layout">
       <article id="contenido">
         <div class="blog-main-img reveal">
-      <img src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Peluquería masculina Gijón — Medea Estilistas"
+      <img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Peluquería masculina Gijón — Medea Estilistas"
            loading="eager" width="1200" height="500" style="width:100%;height:auto;display:block;">
     </div>
     <nav class="blog-toc reveal" aria-label="Tabla de contenido">
@@ -404,7 +319,7 @@
       </ul>
     </div>
     
-    <div class="blog-img-block reveal"><img src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Tratamientos capilares hombre Gijón — Medea Estilistas"
+    <div class="blog-img-block reveal"><img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Tratamientos capilares hombre Gijón — Medea Estilistas"
            loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;"></div>
     <div class="prose reveal">
       <h2 id="coloracion">Coloración masculina: natural y discreta</h2>
@@ -426,7 +341,7 @@
       <p>Uno de los servicios masculinos más demandados en Medea es la preparación para el día de la boda. En el <a href="/novios/novio/">pack de novio</a> incluimos corte, arreglo de barba, tratamiento facial y manicura. Recomendamos una visita de prueba 1-2 semanas antes de la boda para definir el look definitivo.</p>
     </div>
     
-    <div class="blog-img-block reveal"><img src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Peluquería para hombres Gijón Asturias — Medea Estilistas"
+    <div class="blog-img-block reveal"><img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Peluquería para hombres Gijón Asturias — Medea Estilistas"
            loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;"></div>
     <div class="blog-cta-banner reveal">
       <p>¿Buscas un corte o tratamiento capilar en Gijón? Reserva con Montse o Cris.</p>
@@ -451,7 +366,7 @@
         <div class="sidebar-cards">
           
         <a class="sidebar-card" href="/blog/kevin-murphy-cosmetica-capilar/">
-          <img src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
+          <img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
           <div class="sidebar-card-overlay"></div>
           <div class="sidebar-card-body">
             <span class="sidebar-card-title">Kevin Murphy en Medea</span>
@@ -459,7 +374,7 @@
           </div>
         </a>
         <a class="sidebar-card" href="/blog/tendencias-coloracion-temporada/">
-          <img src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Tendencias en coloración — Medea Estilistas" loading="lazy" width="300" height="140">
+          <img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Tendencias en coloración — Medea Estilistas" loading="lazy" width="300" height="140">
           <div class="sidebar-card-overlay"></div>
           <div class="sidebar-card-body">
             <span class="sidebar-card-title">Tendencias en coloración</span>
@@ -467,7 +382,7 @@
           </div>
         </a>
         <a class="sidebar-card" href="/novios/novio/">
-          <img src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Para el novio — Medea Estilistas" loading="lazy" width="300" height="140">
+          <img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Para el novio — Medea Estilistas" loading="lazy" width="300" height="140">
           <div class="sidebar-card-overlay"></div>
           <div class="sidebar-card-body">
             <span class="sidebar-card-title">Para el novio</span>
@@ -502,7 +417,7 @@
         <div class="sidebar-cards">
           
         <a class="sidebar-card" href="/blog/kevin-murphy-cosmetica-capilar/">
-          <img src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
+          <img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
           <div class="sidebar-card-overlay"></div>
           <div class="sidebar-card-body">
             <span class="sidebar-card-title">Kevin Murphy en Medea</span>
@@ -510,7 +425,7 @@
           </div>
         </a>
         <a class="sidebar-card" href="/blog/tendencias-coloracion-temporada/">
-          <img src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Tendencias en coloración — Medea Estilistas" loading="lazy" width="300" height="140">
+          <img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Tendencias en coloración — Medea Estilistas" loading="lazy" width="300" height="140">
           <div class="sidebar-card-overlay"></div>
           <div class="sidebar-card-body">
             <span class="sidebar-card-title">Tendencias en coloración</span>
@@ -518,7 +433,7 @@
           </div>
         </a>
         <a class="sidebar-card" href="/novios/novio/">
-          <img src="/assets/img/hombre-horizontal-2-medea-gijon.webp" alt="Para el novio — Medea Estilistas" loading="lazy" width="300" height="140">
+          <img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Para el novio — Medea Estilistas" loading="lazy" width="300" height="140">
           <div class="sidebar-card-overlay"></div>
           <div class="sidebar-card-body">
             <span class="sidebar-card-title">Para el novio</span>
