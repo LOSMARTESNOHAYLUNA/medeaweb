@@ -409,10 +409,25 @@
 </form>
       </div>
       <div class="reserva-map reveal">
-        <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.7171271515685!2d-5.6439555!3d43.529091199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367b7d26c80e71%3A0xb96af5fea4f8b5ab!2sMedea%20Peluqueria%20y%20Est%C3%A9tica!5e0!3m2!1ses!2ses!4v1782292334474!5m2!1ses!2ses"
-    allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-    title="Medea Estilistas en Google Maps"></iframe>
+        <div id="map-facade" style="position:relative;width:100%;height:220px;background:#e8e2da;border-radius:8px;overflow:hidden;cursor:pointer" onclick="loadMap()" aria-label="Ver mapa de Medea Estilistas en Google Maps" role="button" tabindex="0">
+            <img src="https://maps.googleapis.com/maps/api/staticmap?center=43.529091,-5.6439555&zoom=16&size=600x220&markers=color:0x5d131a|43.529091,-5.6439555&key=AIzaSyD-fake" alt="Ubicación Medea Estilistas en Google Maps" style="width:100%;height:100%;object-fit:cover" loading="lazy" onerror="this.style.display='none'">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(93,19,26,.08)">
+              <a href="https://maps.app.goo.gl/it7pQGJSdR7a5feT6" target="_blank" rel="noopener" style="background:#5d131a;color:#fff;padding:.7rem 1.4rem;border-radius:6px;text-decoration:none;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-family:system-ui,sans-serif">Ver en Google Maps →</a>
+            </div>
+          </div>
+          <script>
+          function loadMap(){
+            var d=document.getElementById('map-facade');
+            var i=document.createElement('iframe');
+            i.src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.7171271515685!2d-5.6439555!3d43.529091199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367b7d26c80e71%3A0xb96af5fea4f8b5ab!2sMedea%20Peluqueria%20y%20Est%C3%A9tica!5e0!3m2!1ses!2ses!4v1782292334474!5m2!1ses!2ses";
+            i.width="100%";i.height="220";
+            i.style.cssText="border:0;display:block";
+            i.allowFullscreen=true;
+            i.referrerPolicy="strict-origin-when-cross-origin";
+            i.title="Medea Estilistas en Google Maps";
+            d.replaceWith(i);
+          }
+          </script>
       </div>
     </div>
   </div>
