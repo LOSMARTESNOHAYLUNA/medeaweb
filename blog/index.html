@@ -2,6 +2,13 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
+<style>
+/* CRITICAL — inline para prevenir FOUC */
+.mobile-menu{display:none!important;position:fixed;inset:0;z-index:300;background:#faf8f5;overflow-y:auto;padding:2rem 1.5rem}
+.mobile-menu.open{display:block!important}
+.nav{position:fixed;top:0;left:0;right:0;z-index:200;background:#faf8f5;border-bottom:1px solid #e8e2da}
+.nav-dropdown{display:none}
+</style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- Google Search Console -->
   <meta name="google-site-verification" content="XI1iDxvCd3lNxbw3uCunn7-8df6uL9f0RQgFMmlOjts" />
@@ -189,6 +196,7 @@
   <a href="/contacto/" class="mm-cta">Reservar cita</a>
 </div>
 
+<main>
 <section class="hero hero-sm" style="padding-top:3rem;min-height:auto;padding-bottom:3rem">
   <div class="hero-bg"></div>
   <div class="hero-noise"></div>
@@ -205,59 +213,59 @@
     <h2 class="section-title reveal">Actualidad y <em class="italic text-gold">tendencias</em></h2>
     <div class="blog-grid" style="margin-top:3rem">
       <a class="blog-card reveal" href="/blog/peluqueria-masculina-gijon/" style="text-decoration:none;display:block">
-        <img class="blog-card-img" src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Los chicos en Medea: cuidado masculino sin complejos — Medea Estilistas" loading="lazy">
+        <img class="blog-card-img" src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Los chicos en Medea: cuidado masculino sin complejos — Medea Estilistas" loading="lazy" width="800" height="500">
         <div class="blog-card-body">
           <div class="blog-tag">Peluquería masculina</div>
           <h2 class="blog-card-title" style="color:var(--ink)">Los chicos en Medea: cuidado masculino sin complejos</h2>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
+          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo <span aria-hidden="true">→</span></span>
         </div>
       </a>
       <a class="blog-card reveal" href="/blog/kevin-murphy-cosmetica-capilar/" style="text-decoration:none;display:block">
-        <img class="blog-card-img" src="/assets/img/blog-kevinmurphy-medea-gijon.webp" alt="Kevin Murphy: cosmética capilar natural para tu cabello — Medea Estilistas" loading="lazy">
+        <img class="blog-card-img" src="/assets/img/blog-kevinmurphy-medea-gijon.webp" alt="Kevin Murphy: cosmética capilar natural para tu cabello — Medea Estilistas" loading="lazy" width="800" height="500">
         <div class="blog-card-body">
           <div class="blog-tag">Tratamientos capilares</div>
           <h2 class="blog-card-title" style="color:var(--ink)">Kevin Murphy: cosmética capilar natural para tu cabello</h2>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
+          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo <span aria-hidden="true">→</span></span>
         </div>
       </a>
       <a class="blog-card reveal" href="/blog/guia-novias-tratamientos-antes-boda/" style="text-decoration:none;display:block">
-        <img class="blog-card-img" src="/assets/img/blog-novias-medea-gijon.webp" alt="Guía completa para novias: cuándo empezar los tratamientos — Medea Estilistas" loading="lazy">
+        <img class="blog-card-img" src="/assets/img/blog-novias-medea-gijon.webp" alt="Guía completa para novias: cuándo empezar los tratamientos — Medea Estilistas" loading="lazy" width="800" height="500">
         <div class="blog-card-body">
           <div class="blog-tag">Novias</div>
           <h2 class="blog-card-title" style="color:var(--ink)">Guía completa para novias: cuándo empezar los tratamientos</h2>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
+          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo <span aria-hidden="true">→</span></span>
         </div>
       </a>
       <a class="blog-card reveal" href="/blog/tendencias-coloracion-temporada/" style="text-decoration:none;display:block">
-        <img class="blog-card-img" src="/assets/img/blog-coloracion-medea-gijon.webp" alt="Tendencias de coloración para esta temporada — Medea Estilistas" loading="lazy">
+        <img class="blog-card-img" src="/assets/img/blog-coloracion-medea-gijon.webp" alt="Tendencias de coloración para esta temporada — Medea Estilistas" loading="lazy" width="800" height="500">
         <div class="blog-card-body">
           <div class="blog-tag">Tendencias</div>
           <h2 class="blog-card-title" style="color:var(--ink)">Tendencias de coloración para esta temporada</h2>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
+          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo <span aria-hidden="true">→</span></span>
         </div>
       </a>
       <a class="blog-card reveal" href="/blog/mesoterapia-virtual-hidratacion-profunda/" style="text-decoration:none;display:block">
-        <img class="blog-card-img" src="/assets/img/blog-mesoterapia-medea-gijon.webp" alt="Mesoterapia virtual: hidratación profunda sin agujas — Medea Estilistas" loading="lazy">
+        <img class="blog-card-img" src="/assets/img/blog-mesoterapia-medea-gijon.webp" alt="Mesoterapia virtual: hidratación profunda sin agujas — Medea Estilistas" loading="lazy" width="800" height="500">
         <div class="blog-card-body">
           <div class="blog-tag">Estética</div>
           <h2 class="blog-card-title" style="color:var(--ink)">Mesoterapia virtual: hidratación profunda sin agujas</h2>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
+          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo <span aria-hidden="true">→</span></span>
         </div>
       </a>
       <a class="blog-card reveal" href="/blog/presoterapia-gijon-beneficios/" style="text-decoration:none;display:block">
-        <img class="blog-card-img" src="/assets/img/blog-presoterapia-medea-gijon.webp" alt="Presoterapia en Gijón: beneficios y qué esperar — Medea Estilistas" loading="lazy">
+        <img class="blog-card-img" src="/assets/img/blog-presoterapia-medea-gijon.webp" alt="Presoterapia en Gijón: beneficios y qué esperar — Medea Estilistas" loading="lazy" width="800" height="500">
         <div class="blog-card-body">
           <div class="blog-tag">Tratamientos corporales</div>
           <h2 class="blog-card-title" style="color:var(--ink)">Presoterapia en Gijón: beneficios y qué esperar</h2>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
+          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo <span aria-hidden="true">→</span></span>
         </div>
       </a>
       <a class="blog-card reveal" href="/blog/tratamiento-longevidad-facial-gijon/" style="text-decoration:none;display:block">
-        <img class="blog-card-img" src="/assets/img/blog-longevidad-medea-gijon.webp" alt="Tratamiento de Longevidad: recupera años en tu piel — Medea Estilistas" loading="lazy">
+        <img class="blog-card-img" src="/assets/img/blog-longevidad-medea-gijon.webp" alt="Tratamiento de Longevidad: recupera años en tu piel — Medea Estilistas" loading="lazy" width="800" height="500">
         <div class="blog-card-body">
           <div class="blog-tag">Tratamientos faciales</div>
           <h2 class="blog-card-title" style="color:var(--ink)">Tratamiento de Longevidad: recupera años en tu piel</h2>
-          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo →</span>
+          <span style="display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Leer artículo <span aria-hidden="true">→</span></span>
         </div>
       </a>
     </div>
@@ -267,6 +275,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="footer-inner">

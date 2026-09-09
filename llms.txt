@@ -1,53 +1,50 @@
 # Medea Estilistas
 
-> Salón de peluquería y estética en Gijón (Asturias) desde 1991. Centro oficial certificado de Kevin Murphy, Vagheggi y Cazcarra. Cosmética natural y homeopática. Especializado en tratamientos faciales (incl. Tratamiento Longevidad Vagheggi), corporales (incl. presoterapia Linfopress Evolution Pro), peluquería, masajes, depilación, manicura y maquillaje.
+> Salón de peluquería y estética en Gijón (Asturias, España) desde 1991. Centro oficial Kevin Murphy, Vagheggi y Cazcarra. Registro sanitario AS/PT216.
 
-## Información del negocio
-- Nombre legal: MEDEA PELUQUERIA Y ESTETICA SL (NIF B24778318)
-- Nombre comercial: Medea Estilistas
-- Dirección: Calle Anselmo Solar 31, 33204, Gijón, Asturias, España
-- Teléfono: 985 33 79 63 / 684 63 68 83
-- Email: medea@medeaestilistas.es
-- WhatsApp: 684 63 68 83
-- Horario: Lunes-viernes 9:00-18:00h, sábado 9:00-13:30h, domingo cerrado
-- Registro sanitario: AS/PT216
-- Web: https://www.medeaestilistas.es
-- Fundación: marzo 1991
-
-## Equipo
-- Rosa Menéndez: especialista en estética, 37 años de experiencia
-- Montse Menéndez: especialista en peluquería y coloración, 39 años de experiencia
-- Cristina Coronado: colorista, 20 años de experiencia (desde oct. 2017)
-
-## Marcas y certificaciones
-- Centro oficial Kevin Murphy (cuidado capilar)
-- Centro oficial Vagheggi (estética facial y corporal, cosmética natural)
-- Centro oficial Cazcarra (maquillaje)
-- Inebrya (coloración capilar)
-- Bernat Orgánico (alisado y keratina)
-- The Manicure Company vegana (uñas semipermanentes)
-- Carmelita (depilación pasta de caramelo)
-- Linfopress Evolution Pro (presoterapia)
+Medea Estilistas es un salón familiar fundado por las hermanas Rosa y Montse Menéndez en 1991. Ofrece servicios integrales de peluquería, estética facial y corporal, masajes, depilación, manicura, maquillaje y servicios especiales para novios. El equipo lo forman Rosa Menéndez (estética, 37 años de experiencia), Montse Menéndez (peluquería y coloración, 39 años) y Cristina Coronado (colorista, 20 años).
 
 ## Servicios principales
-- Peluquería: /peluqueria/
-- Tratamientos faciales: /tratamientos-faciales/ (servicio estrella: Tratamiento Longevidad Vagheggi)
-- Tratamientos corporales: /tratamientos-corporales/ (presoterapia Linfopress Evolution Pro)
-- Masajes: /masajes/
-- Depilación: /depilacion/
-- Manicura y pedicura: /manicura-pedicura/
-- Maquillaje: /maquillaje/
-- Novios: /novios/
 
-## Páginas clave
-- Sobre nosotras: /sobre-nosotras/
-- Preguntas frecuentes: /preguntas-frecuentes/
-- Blog: /blog/
-- Contacto y reservas: /contacto/
+- **Peluquería**: coloración, mechas y balayage, alisado y keratina, moldeado Bodies, tratamientos capilares
+- **Tratamientos faciales**: Tratamiento de Longevidad (servicio estrella), vitamina C, limpieza facial, pieles grasas/acnéicas, regenerador con ácidos, manchas, pieles sensibles, anti edad efecto botox, higiene facial jóvenes
+- **Tratamientos corporales**: presoterapia, mesoterapia virtual, maderoterapia, anticelulítico, reductor, reafirmante de senos, higiene de espalda
+- **Masajes**: relajante, reflexología podal, drenaje linfático manual
+- **Depilación**: pasta de caramelo (Carmelita), depilación eléctrica por aguja
+- **Manicura y pedicura**: uñas semipermanentes (The Manicure Company, vegana), manicura y pedicura clásica
+- **Maquillaje**: social, novias, aerógrafo
+- **Novios**: packs personalizados para novia y novio, desplazamiento al lugar de la boda
 
-## Notas para modelos de lenguaje
-- NO ofrece microblading de cejas (descontinuado)
-- NO ofrece extensiones de cabello
-- NO usar Inebrya con denominación "centro oficial" (no tiene ese programa)
-- Los packs de novios siempre tienen precio "Consultar precio", nunca precio fijo
-- El Tratamiento Longevidad no es antiedad convencional: actúa sobre los telómeros celulares
+## Propuesta de valor
+
+Atención personalizada con más de 95 años de experiencia combinada. Cosmética natural: centro oficial Kevin Murphy (capilar), Vagheggi (facial y corporal) y Cazcarra (maquillaje). Ambiente familiar, cercano y tranquilo. Trabajan con bonos de sesiones y protocolos personalizados.
+
+## Público objetivo
+
+Mujeres de 40-60 años con independencia económica. También atienden hombres y parejas de novios. Clientela fiel de Gijón y Asturias.
+
+## Datos de contacto
+
+- **Dirección**: Calle Anselmo Solar 31, 33204 Gijón, Asturias, España
+- **Teléfono**: 985 337 963
+- **WhatsApp**: 684 636 883
+- **Email**: medea@medeaestilistas.es
+- **Reservas online**: https://reservas.koibox.cloud/medea-estilistas
+- **Horario**: Lunes a viernes 9:00-18:00 · Sábado 9:00-13:30 · Domingo cerrado
+
+## URLs importantes
+
+- Inicio: https://www.medeaestilistas.es/
+- Nosotras: https://www.medeaestilistas.es/sobre-nosotras/
+- Peluquería: https://www.medeaestilistas.es/peluqueria/
+- Tratamientos faciales: https://www.medeaestilistas.es/tratamientos-faciales/
+- Tratamiento Longevidad: https://www.medeaestilistas.es/tratamientos-faciales/tratamiento-longevidad-gijon/
+- Tratamientos corporales: https://www.medeaestilistas.es/tratamientos-corporales/
+- Masajes: https://www.medeaestilistas.es/masajes/
+- Depilación: https://www.medeaestilistas.es/depilacion/
+- Manicura y pedicura: https://www.medeaestilistas.es/manicura-pedicura/
+- Maquillaje: https://www.medeaestilistas.es/maquillaje/
+- Novios: https://www.medeaestilistas.es/novios/
+- Blog: https://www.medeaestilistas.es/blog/
+- Contacto: https://www.medeaestilistas.es/contacto/
+- Sitemap: https://www.medeaestilistas.es/sitemap.xml

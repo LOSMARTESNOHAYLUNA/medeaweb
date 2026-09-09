@@ -2,6 +2,13 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
+<style>
+/* CRITICAL — inline para prevenir FOUC */
+.mobile-menu{display:none!important;position:fixed;inset:0;z-index:300;background:#faf8f5;overflow-y:auto;padding:2rem 1.5rem}
+.mobile-menu.open{display:block!important}
+.nav{position:fixed;top:0;left:0;right:0;z-index:200;background:#faf8f5;border-bottom:1px solid #e8e2da}
+.nav-dropdown{display:none}
+</style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 <!-- Google Search Console -->
   <meta name="google-site-verification" content="XI1iDxvCd3lNxbw3uCunn7-8df6uL9f0RQgFMmlOjts" />
@@ -229,6 +236,7 @@
   <a href="/contacto/" class="mm-cta">Reservar cita</a>
 </div>
 
+<main>
 <section style="padding-top:8rem;padding-bottom:4rem">
   <div class="section-inner" style="max-width:760px">
     <h1 style="font-family:var(--ff-d);font-size:clamp(2rem,4vw,2.8rem);font-weight:300;color:var(--ink);margin-bottom:2rem">Aviso Legal</h1>
@@ -249,6 +257,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="footer-inner">
