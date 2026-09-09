@@ -193,8 +193,9 @@
     </ul>
   </div>
 </nav>
-<div class="mobile-menu" id="mobileMenu" style="display:none" role="dialog" aria-modal="true" aria-label="Menú de navegación">
-  <button class="mm-close" onclick="closeMobileMenu()" aria-label="Cerrar menú">×</button>
+<div class="mobile-menu" id="mobileMenu" style="display:none" role="dialog" aria-modal="true" aria-label="Menú de navegación" aria-labelledby="mm-title">
+  <span id="mm-title" class="sr-only">Menú</span>
+  <button class="mm-close" onclick="closeMobileMenu()" aria-label="Cerrar menú de navegación">×</button>
   <a href="/sobre-nosotras/">Nosotras</a>
   <a data-toggle="mm-pel" href="/peluqueria/">Peluquería</a>
   <div class="mm-sub" id="mm-pel">
@@ -259,7 +260,7 @@
 
 <main>
 <section class="hero-cat" aria-label="Tratamientos Faciales en Gijón — Medea Estilistas">
-  <img class="hero-photo-bg" src="/assets/img/card-faciales-medea-gijon.webp" alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080">
+  <img class="hero-photo-bg" sizes="100vw" src="/assets/img/card-faciales-medea-gijon.webp" alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080">
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-content">
     <nav class="breadcrumb hero-breadcrumb" aria-label="Ruta de navegación">

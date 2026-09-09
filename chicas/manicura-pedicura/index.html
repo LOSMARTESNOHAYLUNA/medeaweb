@@ -261,8 +261,9 @@
 </nav>
 
 <!-- Mobile menu overlay -->
-<div class="mobile-menu" id="mobileMenu" style="display:none" role="dialog" aria-modal="true" aria-label="Menú de navegación">
-  <button class="mm-close" onclick="closeMobileMenu()" aria-label="Cerrar menú">×</button>
+<div class="mobile-menu" id="mobileMenu" style="display:none" role="dialog" aria-modal="true" aria-label="Menú de navegación" aria-labelledby="mm-title">
+  <span id="mm-title" class="sr-only">Menú</span>
+  <button class="mm-close" onclick="closeMobileMenu()" aria-label="Cerrar menú de navegación">×</button>
   <a href="/sobre-nosotras/">Nosotras</a>
   <a data-toggle="mm-pel" href="/peluqueria/">Peluquería</a>
   <div class="mm-sub" id="mm-pel">

@@ -165,8 +165,9 @@
     </ul>
   </div>
 </nav>
-<div class="mobile-menu" id="mobileMenu" style="display:none" role="dialog" aria-modal="true" aria-label="Menú de navegación">
-  <button class="mm-close" onclick="closeMobileMenu()" aria-label="Cerrar menú">×</button>
+<div class="mobile-menu" id="mobileMenu" style="display:none" role="dialog" aria-modal="true" aria-label="Menú de navegación" aria-labelledby="mm-title">
+  <span id="mm-title" class="sr-only">Menú</span>
+  <button class="mm-close" onclick="closeMobileMenu()" aria-label="Cerrar menú de navegación">×</button>
   <a href="/sobre-nosotras/">Nosotras</a>
   <a data-toggle="mm-pel" href="/peluqueria/">Peluquería</a>
   <div class="mm-sub" id="mm-pel">
@@ -236,7 +237,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.medeaestilistas.es/"},{"@type":"ListItem","position":2,"name":"Tratamientos corporales","item":"https://www.medeaestilistas.es/tratamientos-corporales/"},{"@type":"ListItem","position":3,"name":"Maderoterapia en Gijón"}]}</script>
 
 <section class="hero-cat" aria-label="Maderoterapia en Gijón">
-  <img class="hero-photo-bg" src="/assets/img/corporales-maderoterapia-medea-gijon.webp"
+  <img class="hero-photo-bg" sizes="100vw" src="/assets/img/corporales-maderoterapia-medea-gijon.webp"
        alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080" >
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-content">
