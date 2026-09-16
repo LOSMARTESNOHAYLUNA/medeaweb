@@ -205,6 +205,10 @@ section { padding:clamp(4.5rem,9vw,8rem) clamp(1.5rem,5vw,4rem); }
 .section-inner { max-width:1180px; margin:0 auto; }
 .section-surface { background:var(--surface); }
 .section-card-bg { background:var(--card); }
+/* Dos secciones seguidas del mismo fondo: colapsa el padding superior
+   duplicado para que no quede un hueco enorme que parece un error */
+.section-surface + .section-surface,
+.section-card-bg + .section-card-bg { padding-top: 0; }
 
 .eyebrow { display:inline-flex; align-items:center; gap:.8rem; font-size:.75rem; font-weight:400; letter-spacing:.22em; text-transform:uppercase; color:var(--brand); margin-bottom:1.2rem; }
 .eyebrow::after { content:''; display:block; width:34px; height:1px; background:var(--brand); opacity:.35; }
@@ -2405,17 +2409,17 @@ p, li, td, th, span, label, input, textarea, button {
 /* ── RESERVA GRID (info + mapa izq / form dcha) ───────── */
 .reserva-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.3fr;
   grid-template-areas:
     "info form"
     "map  form";
-  gap: 2rem 3rem;
+  gap: 1.8rem 3.5rem;
   align-items: start;
 }
 .reserva-info { grid-area: info; }
 .reserva-map  { grid-area: map; }
 .reserva-form { grid-area: form; align-self: start; }
-.reserva-map iframe { width:100%; height:220px; border:0; display:block; }
+.reserva-map iframe { width:100%; height:380px; border:0; display:block; border-radius:8px; }
 
 @media (max-width: 768px) {
   .reserva-grid {
@@ -2425,5 +2429,5 @@ p, li, td, th, span, label, input, textarea, button {
       "form"
       "map";
   }
-  .reserva-map iframe { height: 180px; }
+  .reserva-map iframe { height: 300px; }
 }
