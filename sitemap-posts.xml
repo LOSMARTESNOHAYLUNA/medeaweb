@@ -2,38 +2,44 @@
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.medeaestilistas.es/blog/microblading-cejas-gijon/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.medeaestilistas.es/blog/peluqueria-masculina-gijon/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://www.medeaestilistas.es/blog/guia-novias-tratamientos-antes-boda/</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.medeaestilistas.es/blog/kevin-murphy-cosmetica-capilar/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.medeaestilistas.es/blog/guia-novias-tratamientos-antes-boda/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.medeaestilistas.es/blog/tendencias-coloracion-temporada/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.medeaestilistas.es/blog/peluqueria-masculina-gijon/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.medeaestilistas.es/blog/presoterapia-gijon-beneficios/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.medeaestilistas.es/blog/tendencias-coloracion-temporada/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.medeaestilistas.es/blog/tratamiento-longevidad-facial-gijon/</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
