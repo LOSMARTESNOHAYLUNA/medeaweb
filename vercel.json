@@ -284,6 +284,156 @@
       "source": "/peluqueria-estetica-tratamiento-facial-corporal-vitamina-c-maquillaje-microblading-color-masaje-corp-149.html",
       "destination": "/",
       "statusCode": 301
+    },
+    {
+      "source": "/index2/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tratamiento-capilar-35/",
+      "destination": "/peluqueria/tratamientos-capilares-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tratamiento-alisador-y-reconstructor-ckr-137/",
+      "destination": "/peluqueria/alisado-keratina-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/caida-capilar-49/",
+      "destination": "/peluqueria/tratamientos-capilares-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/kevinmurphy-gijon-medea-estilistas-cuidado-capilar-cosmetica-natural-para-tu-cabello-152/",
+      "destination": "/peluqueria/tratamientos-capilares-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tratamiento-de-vitamina-c-61/",
+      "destination": "/tratamientos-faciales/vitamina-c-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tratamiento-hidratante-multivitaminado--12/",
+      "destination": "/tratamientos-faciales/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tratamientos-faciales-personalizados-62-62/",
+      "destination": "/tratamientos-faciales/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tratamiento-de-masaje-subdermico-9/",
+      "destination": "/tratamientos-faciales/",
+      "statusCode": 301
+    },
+    {
+      "source": "/productos-vitamina-c-cosmetica-vitamina-c-tratamiento-facial-fitocosmetica--150/",
+      "destination": "/tratamientos-faciales/vitamina-c-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fitocosmetica-phitocosmetica-vagheggi-cosmetica-natural-belleza-tratamientos-cuidadodepiel-naturalez-145/",
+      "destination": "/tratamientos-faciales/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tratamientos-corporales-con-mesoterapia-virtual-26/",
+      "destination": "/tratamientos-corporales/mesoterapia-virtual-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tratamientos-corporales-con-mesoterapia-virtual-60-60/",
+      "destination": "/tratamientos-corporales/mesoterapia-virtual-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tratamiento-drenante-con-presoterapia-11-11/",
+      "destination": "/tratamientos-corporales/presoterapia-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/drenaje-linfatico-manual-5/",
+      "destination": "/masajes/drenaje-linfatico-manual-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/depilacion-por-sonda--34/",
+      "destination": "/depilacion/depilacion-electrica-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/depilacion-electrica-por-aguja-31-31/",
+      "destination": "/depilacion/depilacion-electrica-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/depilacion-electrica-por-aguja-18/",
+      "destination": "/depilacion/depilacion-electrica-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/la-depilacion-con-pasta-de-caramelo-132/",
+      "destination": "/depilacion/pasta-de-caramelo-gijon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/un-consejo-para-conseguir-unas-manos-bonitas-81/",
+      "destination": "/manicura-pedicura/",
+      "statusCode": 301
+    },
+    {
+      "source": "/look-smoked-eyes-39/",
+      "destination": "/maquillaje/",
+      "statusCode": 301
+    },
+    {
+      "source": "/las-chicas-de-natacion-sincronizada-son-maquilladas-con-el-producto-cazcarra-ten-image-123/",
+      "destination": "/maquillaje/",
+      "statusCode": 301
+    },
+    {
+      "source": "/microblading-cejas-medea-estetica-diseno-cejas-belleza-pigmento-microbpigmentacion-gijon-asturias-na-138/",
+      "destination": "/tratamientos-faciales/",
+      "statusCode": 301
+    },
+    {
+      "source": "/moda-otono-invierno-2015-2016-114/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/moda-primavera-verano-2015-109/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/bruno-salvadori-lions-fundacion--122/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/dia-internacional-del-cancer-de-mama-42/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/los-reyes-magos-de-oriente-por-fin-en-gijon-79/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/cuidados-especiales-para-momentos-especiales-143-143/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/peluqueria-estetica-tratamiento-facial-corporal-vitamina-c-maquillaje-microblading-color-masaje-corp-149/",
+      "destination": "/",
+      "statusCode": 301
     }
   ],
   "headers": [
